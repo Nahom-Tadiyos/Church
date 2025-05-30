@@ -92,9 +92,48 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #6b3410;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+        }
+
+        .back-button i {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .back-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <a href="./index.html#resources" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Home
+    </a>
     <!-- Copy your navigation from index.html -->
     <nav class="navbar">
         <!-- Your existing navigation -->
